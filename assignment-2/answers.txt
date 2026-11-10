@@ -1,0 +1,23 @@
+
+Assignment 2 - Answers
+
+1. Navigation Links:
+The navigation links allow users to move between the home page,
+courses page, and contact page.
+
+2. Internal Link:
+The link "اعرف متطلبات الكورس" opens the courses page and jumps
+directly to the HTML requirements section using the fragment
+#html-requirements.
+
+3. Email Link:
+The mailto link opens the user's default email application
+with the registration email address.
+
+4. External Link:
+The MDN link opens in a new browser tab because it uses
+target="_blank".
+
+5. Original Tab:
+The original browser tab remains open when the external link
+is clicked.
