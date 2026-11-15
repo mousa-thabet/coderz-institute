@@ -19,14 +19,50 @@
     <a href="enquiry.html">الاستفسار</a>
 </nav>
 
-<main>
-    <h2>جدول الكورسات</h2>
 
-    <ul>
-        <li>HTML Content: الأحد والثلاثاء، الساعة 5 مساءً.</li>
-        <li>HTML Forms: الاثنين والأربعاء، الساعة 5 مساءً.</li>
-    </ul>
+<main>
+    <h2>جدول مواعيد الكورسات</h2>
+
+    <table border="1">
+        <caption>جدول مواعيد كورسات معهد coderz وعدد ساعات كل لقاء</caption>
+
+        <thead>
+            <tr>
+                <th scope="col">الكورس</th>
+                <th scope="col">اليوم</th>
+                <th scope="col">عدد الساعات</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <th scope="rowgroup" rowspan="2">HTML Content</th>
+                <td>السبت</td>
+                <td>3</td>
+            </tr>
+            <tr>
+                <td>الاثنين</td>
+                <td>3</td>
+            </tr>
+        </tbody>
+
+        <tbody>
+            <tr>
+                <th scope="row">HTML Forms</th>
+                <td>الاربعاء</td>
+                <td>3</td>
+            </tr>
+        </tbody>
+
+        <tfoot>
+            <tr>
+                <th scope="row" colspan="2">مجموع الساعات</th>
+                <td>9</td>
+            </tr>
+        </tfoot>
+    </table>
 </main>
+
 
 <footer>
     <p>جميع الحقوق محفوظة لمعهد coderz</p>
