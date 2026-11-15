@@ -1,9 +1,20 @@
+
 <!DOCTYPE html>
 <html lang="ar" dir="ltr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>معهد coderz</title>
+    <style>
+    table {
+        border-collapse: collapse;
+    }
+
+    th, td {
+        border: 1px solid black;
+        padding: 8px;
+    }
+</style>
 </head>
 <body>
     <header>
@@ -12,16 +23,17 @@
             معهد coderz يقدّم دورات تدريبية تساعدك على تعلّم أساسيات تطوير الويب والبرمجة بطريقة عملية.
             تناسب هذه الدورات المبتدئين والطلاب الراغبين في بناء مهارات تقنية وتطبيقها في مشاريعهم.
         </p>
-         <a href="#monthly-courses">
-        انتقل إلى كورسات هذا الشهر
-         </a>
+        <a href="#monthly-courses">
+            انتقل إلى كورسات هذا الشهر
+        </a>
         <p class="notice">
             <strong>يجب إكمال التسجيل قبل موعد بدء الدورة.</strong>
             يبدأ التسجيل يوم
             <time datetime="2026-12-01T10:00">1 ديسمبر 2026، الساعة 10:00 صباحًا</time>.
         </p>
     </header>
-     <nav>
+
+    <nav>
         <a href="index.html">الرئيسية</a>
         <a href="pages/schedule.html">المواعيد</a>
         <a href="pages/enquiry.html">الاستفسار</a>
@@ -29,40 +41,36 @@
 
     <main>
 
+        <section id="monthly-courses">
+            <h2>كورسات هذا الشهر</h2>
 
-<section id="monthly-courses">
-    <h2>كورسات هذا الشهر</h2>
+            <p>
+                يقدم معهد coderz هذا الشهر كورسات مميزة
+                تساعدك على تعلم إنشاء صفحات الويب وتنظيم
+                النماذج والتعامل مع محتوى المواقع.
+            </p>
 
-    <p>
-        يقدم معهد coderz هذا الشهر كورسات مميزة
-        تساعدك على تعلم إنشاء صفحات الويب وتنظيم
-        النماذج والتعامل مع محتوى المواقع.
-    </p>
+            <ul>
+                <li>HTML Content</li>
+                <li>HTML Forms</li>
+            </ul>
 
-    <ul>
-        <li>HTML Content</li>
-        <li>HTML Forms</li>
-    </ul>
+            <figure>
+                <img src="images/course-cover.webp"
+                     alt="صورة توضيحية لتعلم HTML وإنشاء صفحات الويب"
+                     width="600"
+                     height="300">
 
-    <figure>
-        <img src="images/course-cover.webp"
-             alt="صورة توضيحية لتعلم HTML وإنشاء صفحات الويب"
-             width="600"
-             height="300">
+                <img src="images/images.png"
+                     alt="صورة توضيحية لتعلم HTML وإنشاء صفحات الويب"
+                     width="400"
+                     height="500">
 
-        <img src="images/images.png"
-             alt="صورة توضيحية لتعلم HTML وإنشاء صفحات الويب"
-             width="400"
-             height="500">
-
-        <figcaption>
-            صور توضح كورسات HTML المتاحة في معهد coderz.
-        </figcaption>
-
-       
-
-    </figure>
-</section>
+                <figcaption>
+                    صور توضح كورسات HTML المتاحة في معهد coderz.
+                </figcaption>
+            </figure>
+        </section>
 
         <section>
             <h2>الكورسات المتاحة</h2>
@@ -87,10 +95,53 @@
             <p>.لكتابة فقرة<code>&lt;p&gt;</code>في أول درس نستخدم </p>
         </section>
 
-      
+       
+        <section>
+            <h2>يوم الزوار المفتوح</h2>
+
+            <table>
+                <caption>Visitors by room and time</caption>
+
+                <thead>
+                    <tr>
+                        <th scope="col">Room</th>
+                        <th scope="col">Time</th>
+                        <th scope="col">Visitors</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <th scope="rowgroup" rowspan="2">Lab A</th>
+                        <td>Morning</td>
+                        <td>21</td>
+                    </tr>
+                    <tr>
+                        <td>Evening</td>
+                        <td>8</td>
+                    </tr>
+                </tbody>
+
+                <tbody>
+                    <tr>
+                        <th scope="row">Lab B</th>
+                        <td>Morning</td>
+                        <td>5</td>
+                    </tr>
+                </tbody>
+
+                <tfoot>
+                    <tr>
+                        <th scope="row" colspan="2">Total visitors</th>
+                        <td>34</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </section>
+
     </main>
 
-     <footer>
+    <footer>
         <p>جميع الحقوق محفوظة لمعهد coderz</p>
     </footer>
 </body>
