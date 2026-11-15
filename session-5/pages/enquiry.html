@@ -1,58 +1,85 @@
 
 <!DOCTYPE html>
-<html lang="ar" dir="rtl">
+<html lang="ar">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>الاستفسار عن الكورسات - معهد coderz</title>
+    <title>استفسار عن كورس</title>
 </head>
 <body>
 
-<header>
-    <h1>الاستفسار عن الكورسات</h1>
-    <p>أرسل استفسارك وسنساعدك في اختيار الكورس المناسب.</p>
-</header>
+    <h1>استفسار عن كورس</h1>
 
-<nav>
-    <a href="../index.html">الرئيسية</a>
-    <a href="schedule.html">المواعيد</a>
-    <a href="enquiry.html">الاستفسار</a>
-</nav>
+    <form action="#" method="post">
 
-<main>
-    <h2>نموذج الاستفسار</h2>
-
-    <form>
-        <label for="name">الاسم:</label>
-        <input type="text" id="name" name="name" required>
-
+        <label for="fullname">الاسم الكامل:</label>
+        <input
+            type="text"
+            id="fullname"
+            name="fullname"
+            placeholder="أدخل اسمك الكامل"
+            autocomplete="name"
+        >
         <br><br>
 
         <label for="email">البريد الإلكتروني:</label>
-        <input type="email" id="email" name="email" required>
-
+        <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="example@email.com"
+            autocomplete="email"
+        >
         <br><br>
 
-        <label for="course">الكورس المناسب:</label>
+        <label for="phone">رقم الهاتف:</label>
+        <input
+            type="tel"
+            id="phone"
+            name="phone"
+            placeholder="أدخل رقم هاتفك"
+            autocomplete="tel"
+        >
+        <br><br>
+
+        <label for="course">الكورس:</label>
         <select id="course" name="course">
-            <option value="HTML Content">HTML Content</option>
-            <option value="HTML Forms">HTML Forms</option>
+            <option value="">اختر كورسًا</option>
+            <option value="content">HTML Content</option>
+            <option value="forms">HTML Forms</option>
         </select>
-
         <br><br>
 
-        <label for="message">اكتب استفسارك:</label>
-        <textarea id="message" name="message"></textarea>
-
+        <label for="seats">عدد المقاعد:</label>
+        <input
+            type="number"
+            id="seats"
+            name="seats"
+            value="1"
+        >
         <br><br>
 
-        <button type="submit">إرسال الاستفسار</button>
+        <label for="date">التاريخ المفضل:</label>
+        <input
+            type="date"
+            id="date"
+            name="date"
+        >
+        <br><br>
+
+        <label for="message">نص الاستفسار:</label>
+        <br>
+        <textarea
+            id="message"
+            name="message"
+            rows="5"
+            cols="40"
+            placeholder="اكتب استفسارك هنا..."
+        ></textarea>
+        <br><br>
+
+        <button type="submit">إرسال</button>
+
     </form>
-</main>
-
-<footer>
-    <p>جميع الحقوق محفوظة لمعهد coderz</p>
-</footer>
 
 </body>
 </html>
