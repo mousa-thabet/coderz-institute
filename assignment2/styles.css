@@ -1,0 +1,20 @@
+/* القواعد الأساسية المنسوخة في البداية */
+#course-title { color: purple; }
+.title { color: green; }
+h1 { color: navy; }
+.course-card { color: #374151; }
+
+/* قاعدة توريث لون البطاقة للفقرات غير المباشرة فقط باستخدام Child Combinator (>) */
+.course-card > p {
+    color: inherit;
+}
+
+/* تنسيق الرابط عند المرور بالماوس وعند التركيز عبر لوحة المفاتيح */
+a:hover {
+    color: #dc2626;
+}
+
+a:focus-visible {
+    outline: 3px solid #2563eb;
+    outline-offset: 2px;
+}
