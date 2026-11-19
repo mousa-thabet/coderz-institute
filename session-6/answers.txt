@@ -1,0 +1,2 @@
+index.html : href="styles.css"
+pages/courses.html : href="../styles.css"
