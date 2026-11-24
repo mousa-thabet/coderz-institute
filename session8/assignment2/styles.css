@@ -1,0 +1,107 @@
+
+/* إعدادات الصفحة */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Tahoma, sans-serif;
+    background-color: #EFF6FF;
+    direction: rtl;
+}
+
+/* الحاوية الرئيسية */
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding-top: 70px;
+}
+
+/* العنوان */
+.page-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.page-header h1 {
+    color: #2563EB;
+    font-size: 36px;
+    font-weight: bold;
+}
+
+/* اللوحة */
+.dashboard {
+    background-color: #E2E8F0;
+    min-height: 400px;
+    padding: 40px;
+    border-radius: 15px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* مجموعة البطاقات */
+.cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    width: 100%;
+}
+
+/* البطاقات */
+.card {
+    background-color: #FFFFFF;
+    border: 1px solid #CBD5E1;
+    border-radius: 12px;
+
+    flex: 1;
+    min-height: 220px;
+    padding: 30px 20px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+}
+
+/* الأرقام */
+.card h2 {
+    color: #2563EB;
+    font-size: 55px;
+    margin-bottom: 15px;
+}
+
+/* النصوص */
+.card p {
+    color: #183B42;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* الشاشات الصغيرة */
+@media (max-width: 700px) {
+    .dashboard {
+        padding: 20px;
+    }
+
+    .cards {
+        flex-direction: column;
+    }
+
+    .card {
+        width: 100%;
+        min-height: 170px;
+    }
+
+    .page-header h1 {
+        font-size: 28px;
+    }
+}
