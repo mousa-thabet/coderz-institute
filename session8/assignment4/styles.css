@@ -1,0 +1,177 @@
+
+/* الإعدادات العامة */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Tahoma, sans-serif;
+    background-color: #F8FAFC;
+    direction: rtl;
+    color: #0F172A;
+}
+
+/* الحاوية الرئيسية */
+.container {
+    width: 92%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 45px 0;
+}
+
+/* عنوان الصفحة */
+.page-header {
+    margin-bottom: 35px;
+    text-align: center;
+}
+
+.page-header h1 {
+    font-size: 34px;
+    margin-bottom: 10px;
+    color: #0F172A;
+}
+
+.page-header p {
+    color: #64748B;
+    font-size: 15px;
+}
+
+/* لوحة المشاريع */
+.board {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    gap: 22px;
+}
+
+/* الأعمدة */
+.column {
+    flex: 1 1 300px;
+    min-width: 0;
+    background-color: #F1F5F9;
+    border: 1px solid #CBD5E1;
+    border-radius: 14px;
+    padding: 18px;
+}
+
+/* رأس العمود */
+.column-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.column-header h2 {
+    font-size: 18px;
+    color: #0F172A;
+}
+
+/* العدادات */
+.counter {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+/* ألوان العدادات */
+.todo-counter {
+    background-color: #DBEAFE;
+    color: #1D4ED8;
+}
+
+.progress-counter {
+    background-color: #F3E8FF;
+    color: #7C3AED;
+}
+
+.done-counter {
+    background-color: #DCFCE7;
+    color: #166534;
+}
+
+/* البطاقات داخل العمود */
+.tasks {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* بطاقة المشروع */
+.task-card {
+    background-color: #FFFFFF;
+    border: 1px solid #CBD5E1;
+    border-radius: 10px;
+    padding: 18px;
+}
+
+/* عنوان البطاقة */
+.task-card h3 {
+    color: #0F172A;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+/* وصف البطاقة */
+.task-card p {
+    color: #64748B;
+    font-size: 13px;
+    line-height: 1.9;
+    margin-bottom: 15px;
+}
+
+/* الشارات */
+.tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.tags span {
+    padding: 5px 12px;
+    border-radius: 6px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+/* شارة HTML */
+.html-tag {
+    background-color: #DBEAFE;
+    color: #1D4ED8;
+}
+
+/* شارة CSS */
+.css-tag {
+    background-color: #F3E8FF;
+    color: #7C3AED;
+}
+
+/* الشاشات الصغيرة */
+@media (max-width: 700px) {
+
+    .container {
+        width: 92%;
+        padding: 30px 0;
+    }
+
+    .page-header h1 {
+        font-size: 27px;
+    }
+
+    .board {
+        flex-direction: column;
+    }
+
+    .column {
+        width: 100%;
+        flex: 1 1 auto;
+    }
+}
